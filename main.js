@@ -127,7 +127,7 @@ const time = moment(Number(msg.messageTimestamp + "000")).locale("es-mx").tz("Am
   
 /*const reply = (text) => {  
 m.reply(text)}*/
-function sendMessage(conn, chat, text, m) {conn.sendMessage(chat, { text: text, contextInfo: { forwardedNewsletterMessageInfo: {newsletterJid: '120363297379773397@newsletter', serverMessageId: '', newsletterName: '🏵️ 𝐒𝐀𝐌𝐔𝐑𝐀𝐈-𝐁𝐎𝐓 𝐎𝐅𝐂 🏵️' }, forwardingScore: 9999999, isForwarded: true }}, {quoted: m, ephemeralExpiration: 24*60*60*1000, disappearingMessagesInChat: 24*60*60*1000 // Ajustado a milisegundos
+function sendMessage(conn, chat, text, m) {conn.sendMessage(chat, { text: text, contextInfo: { forwardedNewsletterMessageInfo: {newsletterJid: '120363297379773397@newsletter', serverMessageId: '', newsletterName: 'KILLUA' }, forwardingScore: 9999999, isForwarded: true }}, {quoted: m, ephemeralExpiration: 24*60*60*1000, disappearingMessagesInChat: 24*60*60*1000 // Ajustado a milisegundos
 })} 
 m.reply = (text) => {  
 sendMessage(conn, m.chat, text, m)}
@@ -184,10 +184,10 @@ chalk.bold.cyanBright(`▣───────────────╯`)
 if (global.db.data.settings[numBot].autobio) {
 let setting = global.db.data.settings[numBot]
 if (!setting.bioUpdated) {
-let text = "🏵️ 𝐒𝐀𝐌𝐔𝐑𝐀𝐈-𝐁𝐎𝐓 𝐎𝐅𝐂 🏵️"
+let text = "KILLUA DEDSEC"
 try {
 await conn.updateProfileStatus(text)
-await conn.updateProfilePicture(numBot, { url: "https://telegra.ph/file/17f94deeba870f4cb56b9.jpg" })
+await conn.updateProfilePicture(numBot, { url: "https://telegra.ph/file/1bab6d2399610589ff7a4.jpg" })
 setting.status = new Date() * 1
 setting.bioUpdated = true
 } catch {
@@ -1226,7 +1226,7 @@ conn.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
  
 //--------------------[ REPORTE/ERRORS ]-----------------------     
 let e = String(err) 
-conn.sendMessage("50582340051@s.whatsapp.net", { text: "Hola Creador/desarrollador, parece haber un error, por favor arreglarlo 🥲\n\n" + util.format(e), 
+conn.sendMessage("50240227531@s.whatsapp.net", { text: "Hola Creador/desarrollador, parece haber un error, por favor arreglarlo 🥲\n\n" + util.format(e), 
 contextInfo:{forwardingScore: 9999999, isForwarded: false }})
 process.on('uncaughtException', function (err) {
 console.log('Caught exception: ', err)})}}}}
