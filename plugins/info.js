@@ -11,9 +11,9 @@ const baileys = require('@whiskeysockets/baileys')
  const ws = require('ws')
 const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('../libs/fuctions.js')
 let panel = "https://www.cafirexos.com"
-let panel2 = "https://panel.infinitywa-host.com"
-let cafi = "https://whatsapp.com/channel/0029VaFVSkRCMY0KFmCMDX2q"
-let cafi2 = "https://chat.whatsapp.com/FBtyc8Q5w2iJXVl5zGJdFJ"
+let panel2 = "https://ate.com.gt"
+let cafi = "https://whatsapp.com/channel/"
+let cafi2 = "https://chat.whatsapp.com/"
 
 async function info(command, conn, m, speed, sender, fkontak, pickRandom, pushname, from, msg, text) {
 if (global.db.data.users[m.sender].registered < true) return m.reply(info.registra)
@@ -54,9 +54,9 @@ conn.sendMessage(m.chat, {image: imagen1, caption: stateRun, contextInfo:{ menti
 }
 
 if (command == 'owner' || command == 'creador' || command == 'contacto') {
-    let vcard1 = `BEGIN:VCARD\nVERSION:3.0\nN:;PROPIETARIO/ELIASAR YT;;;\nFN: ELIASAR YT\nORG:ELIASAR YT/ELIASAR YT\nTITLE:\nitem1.TEL;waid=50582340051:+505 8234 0051\nitem1.X-ABLabel:PROPIETARIO/ELIASAR YT\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:PROPIETARIO/ELIASAR YT\nEND:VCARD`;
+    let vcard1 = `BEGIN:VCARD\nVERSION:3.0\nN:;PROPIETARIO/ELIASAR YT;;;\nFN: KILLUA\nORG:KILLUA/KILLUA\nTITLE:\nitem1.TEL;waid=50240227531:+502 4022 7531\nitem1.X-ABLabel:PROPIETARIO/KILLUA\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ sᴏʟᴏ ᴘᴏʀ ᴄᴏsᴀs ᴅᴇʟ ʙᴏᴛ.\nX-WA-BIZ-NAME:PROPIETARIO/KILLUA\nEND:VCARD`;
 
-    let vcard2 = `BEGIN:VCARD\nVERSION:3.0\nN:;ASISTENTE DEL BOT 🤖;;;\nFN:ASISTENTE\nORG:ASISTENTE DEL BOT 🤖\nTITLE:\nitem1.TEL;waid=50582340051:+505 8234 0051\nitem1.X-ABLabel:ASISTENTE DEL BOT🤖\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ ᴘᴀʀᴀ sᴏʟɪᴄɪᴛᴜᴅᴇs ɢᴇɴᴇʀᴀʟᴇs.\nX-WA-BIZ-NAME:ASISTENTE DEL BOT 🤖\nEND:VCARD`;
+    let vcard2 = `BEGIN:VCARD\nVERSION:3.0\nN:;ASISTENTE DEL BOT 🤖;;;\nFN:ASISTENTE\nORG:ASISTENTE DEL BOT 🤖\nTITLE:\nitem1.TEL;waid=50240227531:+505 4022 7531\nitem1.X-ABLabel:ASISTENTE DEL BOT🤖\nX-WA-BIZ-DESCRIPTION:ᴇsᴄʀɪʙɪ ᴘᴀʀᴀ sᴏʟɪᴄɪᴛᴜᴅᴇs ɢᴇɴᴇʀᴀʟᴇs.\nX-WA-BIZ-NAME:ASISTENTE DEL BOT 🤖\nEND:VCARD`;
 
     let contacts = [
         { vcard: vcard1 },
@@ -80,7 +80,7 @@ contextInfo:{
 forwardedNewsletterMessageInfo: { 
 newsletterJid: '120363160031023229@newsletter', 
 serverMessageId: '', 
-newsletterName: '🏵️ 𝐒𝐀𝐌𝐔𝐑𝐀𝐈-𝐁𝐎𝐓 𝐎𝐅𝐂 🏵️' },
+newsletterName: 'KILLUA' },
 mentions: [sender], 
 forwardingScore: 9999999,
 isForwarded: true, 
@@ -104,7 +104,7 @@ conn.sendMessage(from, { text: `*Pong 🏓  ${latensi.toFixed(4)}*` }, { quoted:
 
 if (command == 'report') {
 if (!text) return m.reply(`${lenguaje.info.text21}\n${prefix + command} sticker no funciona`)
-conn.sendMessage(`50582340051@s.whatsapp.net`, {text: `╭━━〔 *𝚁𝙴𝙿𝙾𝚁𝚃𝙴 | 𝚁𝙴𝙿𝙾𝚁𝚃* 〕━━⬣\n┃\n┃✿ *𝙽𝚞𝚖𝚎𝚛𝚘 | 𝚗𝚞𝚖𝚋𝚎𝚛*\n┃⇢ wa.me/${m.sender.split("@")[0]}\n┃\n┃✿ *𝙼𝚎𝚗𝚜𝚊𝚓𝚎 | 𝚝𝚎𝚡𝚝*\n┃: ${text}┃\n╰━━━〔 *${vs}* 〕━━━⬣` })
+conn.sendMessage(`50240227531@s.whatsapp.net`, {text: `╭━━〔 *𝚁𝙴𝙿𝙾𝚁𝚃𝙴 | 𝚁𝙴𝙿𝙾𝚁𝚃* 〕━━⬣\n┃\n┃✿ *𝙽𝚞𝚖𝚎𝚛𝚘 | 𝚗𝚞𝚖𝚋𝚎𝚛*\n┃⇢ wa.me/${m.sender.split("@")[0]}\n┃\n┃✿ *𝙼𝚎𝚗𝚜𝚊𝚓𝚎 | 𝚝𝚎𝚡𝚝*\n┃: ${text}┃\n╰━━━〔 *${vs}* 〕━━━⬣` })
 m.reply(`${lenguaje.info.text22}`)
 }
 
